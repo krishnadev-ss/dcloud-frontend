@@ -6,6 +6,7 @@ import {baseUrl} from "@/app/api/api";
 import {toast} from "react-hot-toast";
 import Menu from "@/components/Menu/Menu";
 import Modal from "@/components/Preview/preview";
+import Image from "next/image";
 
 function FavoritesLayout() {
 
@@ -50,7 +51,7 @@ function FavoritesLayout() {
 
                     <div className={styles.favorites}>
                         <button className={styles['favorites-button']}>
-                            <img src="/mycloud/camera.png" alt="Button Image"/>
+                            <Image width={50} height={50} src="/mycloud/camera.png" alt="Button Image"/>
                             <div className={styles['favorites-button-text']}>
                                 <p className={styles['favorites-button-text-name']}>Pictures</p>
                                 <p className={styles['favorites-button-text-number']}>{`${data?.total} files`}</p>

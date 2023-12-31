@@ -1,6 +1,7 @@
 "use client";
 import React, {useEffect, useState} from 'react';
 import Link from "next/link";
+import Image from "next/image";
 import {useRouter} from 'next/navigation';
 import styles from './Navbar.module.css';
 import {toast} from "react-hot-toast";
@@ -41,7 +42,7 @@ function Navbar() {
     return (
         <div className={styles['left-side']}>
             <div className={styles['profile-photo']}>
-                <img src={avatar} alt="Profile Photo"/>
+                <Image width={50} height={50} src={avatar} alt="Profile Photo"/>
             </div>
             <div>
                 <button onClick={() => router.push('/mycloud')} className={`${styles.button1} ${styles.home}`}>My

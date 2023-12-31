@@ -20,6 +20,7 @@ const Page = () => {
         })
             .then(res => res.json())
             .then(data => {
+
                 if (data.success) {
                     router.push("/mycloud");
                 } else {

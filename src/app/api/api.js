@@ -1,6 +1,6 @@
-// require('dotenv').config()
 import { getAuth } from "./auth";
-export const baseUrl =  "https://dcloud.nayan.radr.in/"
+
+export const baseUrl =  "http://localhost:8001/";
 
 export async function get(url, kwargs = {}, headers = {}) {
     const response = await fetch(url + "?" + new URLSearchParams(kwargs),

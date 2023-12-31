@@ -7,6 +7,7 @@ import {toast} from "react-hot-toast";
 import {useRouter} from "next/navigation";
 import Modal from "@/components/Preview/preview";
 import Menu from "@/components/Menu/Menu";
+import Image from "next/image";
 
 const HomePageLayout = () => {
 
@@ -44,43 +45,43 @@ const HomePageLayout = () => {
         <Fragment>
             <Navbar/>
             <div className={styles.container}>
-                {modalOpen && <Modal file={file} setOpenModal={setModalOpen} />}
+                {modalOpen && <Modal file={file} setOpenModal={setModalOpen}/>}
                 <div className={styles['main-content']}>
-                    <div className={styles['search-bar']}onClick={() => router.push("/search")} >
+                    <div className={styles['search-bar']} onClick={() => router.push("/search")}>
                         <input className={styles['search-input']} placeholder="Search" disabled={true}/>
                     </div>
                     <div className={styles.filecategories}>
                         <p>Categories</p>
                         <button className={styles.pic} onClick={() => router.push("/mycloud/pictures")}>
-                            <img src="mycloud/camera.png" alt="Button Image"/>
+                            <Image width={50} height={50} src="/mycloud/camera.png" alt="Button Image"/>
                             <div className={styles['filecategories-text']}>
                                 <p className={styles['filecategories-text-name']}>Pictures</p>
                                 <p className={styles['filecategories-text-number']}>{data?.count?.image} files</p>
                             </div>
                         </button>
                         <button className={styles.doc} onClick={() => router.push("/mycloud/documents")}>
-                            <img src="mycloud/documents.png" alt="Button Image"/>
+                            <Image width={50} height={50} src="/mycloud/documents.png" alt="Button Image"/>
                             <div className={styles['filecategories-text']}>
                                 <p className={styles['filecategories-text-name']}>Documents</p>
                                 <p className={styles['filecategories-text-number']}>{data?.count?.document} files</p>
                             </div>
                         </button>
                         <button className={styles.vid} onClick={() => router.push("/mycloud/videos")}>
-                            <img src="mycloud/video.png" alt="Button Image"/>
+                            <Image width={50} height={50} src="/mycloud/video.png" alt="Button Image"/>
                             <div className={styles['filecategories-text']}>
                                 <p className={styles['filecategories-text-name']}>Videos</p>
                                 <p className={styles['filecategories-text-number']}>{data?.count?.video} files</p>
                             </div>
                         </button>
                         <button className={`${styles.aud}`} onClick={() => router.push("/mycloud/audios")}>
-                            <img src="mycloud/audio.png" alt="Button Image"/>
+                            <Image width={50} height={50} src="/mycloud/audio.png" alt="Button Image"/>
                             <div className={styles['filecategories-text']}>
                                 <p className={styles['filecategories-text-name']}>Audio</p>
                                 <p className={styles['filecategories-text-number']}>{data?.count?.audio} files</p>
                             </div>
                         </button>
                         <button className={`${styles.other}`} onClick={() => router.push("/mycloud/others")}>
-                            <img src="mycloud/others.png" alt="Button Image"/>
+                            <Image width={50} height={50} src="/mycloud/others.png" alt="Button Image"/>
                             <div className={styles['filecategories-text']}>
                                 <p className={styles['filecategories-text-name']}>Others</p>
                                 <p className={styles['filecategories-text-number']}>{data?.count?.other} files</p>
@@ -94,13 +95,23 @@ const HomePageLayout = () => {
                                 <button className={styles.longbutton}>
                                     <div className={styles['longbutton-elements']}>
                                         <div className={styles['longbutton-icon']}>
-                                            {file.type === "image" && <img src="mycloud/camerawhite.png" alt="image"/>}
-                                            {file.type === "video" && <img src="mycloud/videowhite.png" alt="image"/>}
-                                            {file.type === "document" && <img src="mycloud/documentswhite.png" alt="image"/>}
-                                            {file.type === "audio" && <img src="mycloud/audiowhite.png" alt="image"/>}
-                                            {file.type === "other" && <img src="mycloud/others.png" alt="image"/>}
+                                            {file.type === "image" &&
+                                                <Image width={50} height={50} src="/mycloud/camerawhite.png"
+                                                       alt="image"/>}
+                                            {file.type === "video" &&
+                                                <Image width={50} height={50} src="/mycloud/videowhite.png"
+                                                       alt="image"/>}
+                                            {file.type === "document" &&
+                                                <Image width={50} height={50} src="/mycloud/documentswhite.png"
+                                                       alt="image"/>}
+                                            {file.type === "audio" &&
+                                                <Image width={50} height={50} src="/mycloud/audiowhite.png"
+                                                       alt="image"/>}
+                                            {file.type === "other" &&
+                                                <Image width={50} height={50} src="/mycloud/others.png" alt="image"/>}
                                         </div>
-                                        <div className={styles['longbutton-filename']} onClick={() => handleFileClick(file)}>{file.name.slice(0, 20)}</div>
+                                        <div className={styles['longbutton-filename']}
+                                             onClick={() => handleFileClick(file)}>{file.name.slice(0, 20)}</div>
                                         <div className={styles['longbutton-fileformat']}>{file.type}</div>
                                         <div className={styles['longbutton-fileformat']}>{file.size.toFixed(3)}MB</div>
                                         <div className={styles.options}>
@@ -127,8 +138,8 @@ const HomePageLayout = () => {
                             <div className={styles.addfl}>
                                 <button style={{cursor: "pointer"}} className={styles.addfiles}
                                         onClick={() => router.push("/upload")}>
-                                    <img src="mycloud/addfiles.png" alt="Upload Icon"
-                                         className={styles['upload-icon']}/>
+                                    <Image width={50} height={50} src="/mycloud/addfiles.png" alt="Upload Icon"
+                                           className={styles['upload-icon']}/>
                                     <div className={styles.label}>Add new files</div>
                                 </button>
                             </div>
