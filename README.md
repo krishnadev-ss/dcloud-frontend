@@ -5,9 +5,7 @@
 </div>
 
 dCloud is a cutting-edge cloud storage solution that leverages the power of IPFS for secure, decentralized file storage.
-It has the features like file upload, download, sharing, and deletion. Users can also create folders and upload files to
-them. The files are encrypted before uploading to IPFS providing an extra layer of security. Now you can store unlimited
-files securely and access them from anywhere in the world.
+It has features like file upload, download, sharing, deletion, etc. You can store unlimited files securely and access them from anywhere in the world.
 
 ### UI
 
