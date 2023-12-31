@@ -104,6 +104,7 @@ const HomePageLayout = () => {
                             shareMenu
                             favoriteMenu
                             deleteMenu
+                            handleFileClick={handleFileClick}
                         />
 
 

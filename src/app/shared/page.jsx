@@ -34,7 +34,6 @@ const SharedFilesLayout = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setData(data)
             })
             .catch((err) => {
@@ -63,6 +62,7 @@ const SharedFilesLayout = () => {
                         data={data}
                         downloadMenu
                         removeShareMenu
+                        handleFileClick={handleFileClick}
                     />
 
 

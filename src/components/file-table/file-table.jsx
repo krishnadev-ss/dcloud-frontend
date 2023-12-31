@@ -15,8 +15,10 @@ const FileTable = ({
                        shareMenu,
                        favoriteMenu,
                        deleteMenu,
-                       removeShareMenu
+                       removeShareMenu,
+                       handleFileClick
                    }) => {
+
     return (
         <TableContainer>
             <Table>
