@@ -1,323 +1,349 @@
 
 .container {
-  display: flex;
-  min-height: 100vh;
+    display: flex;
+    min-height: 100vh;
 }
 
 
 .main-content {
-  margin-left: 200px;
-  margin-right: 300px;
-  flex-grow: 1;
-  padding: 20px;
-  background-color: #e8eef3;
+    margin-left: 200px;
+    margin-right: 300px;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #e8eef3;
 }
 
 .right-side {
-  position: fixed;
-  width:250px;
-  height: 800px;
-  margin-left: 1200px;
-  z-index: 1;
-  overflow: hidden;
-  flex: 0 0 200px;
-  background-color: #e8eef3;
-  padding: 20px 50px 20px 50px;
+    position: fixed;
+    width: 250px;
+    height: 800px;
+    margin-left: 1200px;
+    z-index: 1;
+    overflow: hidden;
+    flex: 0 0 200px;
+    background-color: #e8eef3;
+    padding: 20px 50px 20px 50px;
 }
 
 .profile-photo {
-  text-align: center;
-  padding: 40px;
+    text-align: center;
+    padding: 40px;
 }
+
 .profile-photo img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #d1dbff;
-  border:none;
-  object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d1dbff;
+    border: none;
+    object-fit: cover;
 }
+
 .button1 {
-  font-size: 15px;
-  width: 100%;
-  border: none;  /*Remove the border if desired */
-  background-color: #1d297c; /* Set the desired background color */
-  color: #ffffff; /* Set the desired text color */
-  padding: 15px 15px; /* Adjust the padding as needed */
+    font-size: 15px;
+    width: 100%;
+    border: none; /*Remove the border if desired */
+    background-color: #1d297c; /* Set the desired background color */
+    color: #ffffff; /* Set the desired text color */
+    padding: 15px 15px; /* Adjust the padding as needed */
 }
+
 .button1:hover {
-  background-color: #141d58; /* Set the background color on hover */
-  color: #ffffff; /* Set the text color on hover */
+    background-color: #141d58; /* Set the background color on hover */
+    color: #ffffff; /* Set the text color on hover */
 }
 
 .button2 {
-  font-size: 15px;
-  width: 100%;
-  border: none;  /*Remove the border if desired */
-  background-color: #1d297c; /* Set the desired background color */
-  color: #ffffff; /* Set the desired text color */
-  padding: 15px 15px; /* Adjust the padding as needed */
+    font-size: 15px;
+    width: 100%;
+    border: none; /*Remove the border if desired */
+    background-color: #1d297c; /* Set the desired background color */
+    color: #ffffff; /* Set the desired text color */
+    padding: 15px 15px; /* Adjust the padding as needed */
 }
 
 .button2:hover {
-  background-color: #141d58; /* Set the background color on hover */
-  color: #ffffff; /* Set the text color on hover */
+    background-color: #141d58; /* Set the background color on hover */
+    color: #ffffff; /* Set the text color on hover */
 }
 
 .search-bar {
-  display: flex;
-  align-items: center;
-  width: 100%; /* Adjust the width as needed */
-  height: 6%; /* Adjust the height as needed */
-  background-color: #ffffff; /* Set the background color */
-  border-radius: 20px; /* Add rounded corners if desired */
-  overflow: hidden; /* Hide any overflowing content */
+    display: flex;
+    align-items: center;
+    width: 100%; /* Adjust the width as needed */
+    height: 6%; /* Adjust the height as needed */
+    background-color: #ffffff; /* Set the background color */
+    border-radius: 20px; /* Add rounded corners if desired */
+    overflow: hidden; /* Hide any overflowing content */
 }
 
 .search-input {
-  background-color: #ffffff;
-  flex-grow: 1;
-  border: none;
-  outline: none;
-  padding: 25px; /* Adjust the padding as needed */
-  font-size: 16px; /* Adjust the font size as needed */
-  border-radius: 20px;
+    background-color: #ffffff;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 25px; /* Adjust the padding as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    border-radius: 20px;
 }
 
 .filecategories {
-  color: #2a3471;
-  font-weight: bold;
-  padding: 10px;
-  padding-top: 20px;
+    color: #2a3471;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 20px;
 }
 
 .pic {
-  padding: 10px;
-  margin-right: 5px;
-  font-size: 16px;
-  background-color: #0473c2;
-  color: white;
-  width: 18%;
-  height: 100px;
-  border-radius: 10px;
-  border: none;
-  text-align: left;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 16px;
+    background-color: #0473c2;
+    color: white;
+    width: 18%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
 }
 
 .pic img {
-  width:25px;
-  height:25px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  padding:1px;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 1px;
 }
+
 .doc {
-  padding: 10px;
-  margin: 5px;
-  font-size: 16px;
-  background-color: #d30c9b;
-  color: white;
-  width: 18%;
-  height: 100px;
-  border-radius: 10px;
-  border: none;
-  text-align: left;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #d30c9b;
+    color: white;
+    width: 18%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
 }
+
 .doc img {
-  width:25px;
-  height:25px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  padding:1px;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 1px;
 }
+
 .vid {
-  padding: 10px;
-  margin: 5px;
-  font-size: 16px;
-  background-color: #09a185;
-  color: white;
-  width: 18%;
-  height: 100px;
-  border-radius: 10px;
-  border: none;
-  text-align: left;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #09a185;
+    color: white;
+    width: 18%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
 }
+
 .vid img {
-  width:25px;
-  height:25px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  padding:1px;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 1px;
 }
+
 .aud {
-  padding: 10px;
-  font-size: 16px;
-  margin: 5px;
-  background-color: #4d0dd7;
-  color: white;
-  width: 18%;
-  height: 100px;
-  border-radius: 10px;
-  border: none;
-  text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #4d0dd7;
+    color: white;
+    width: 18%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
 }
+
 .aud img {
-  width:25px;
-  height:25px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  padding:1px;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 1px;
 }
 
 .other {
-  padding: 10px;
-  font-size: 16px;
-  margin: 5px;
-  color: white;
-  width: 18%;
-  height: 100px;
-  border-radius: 10px;
-  border: none;
-  text-align: left;
-  background-color: #cf365a;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    color: white;
+    width: 18%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    background-color: #cf365a;
 }
 
 .other img {
-  width:25px;
-  height:25px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  padding:1px;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 1px;
 }
 
 .other:hover {
-  background-color: #be1d42; /* Set the background color on hover */
-  color: #ffffff; /* Set
+    background-color: #be1d42; /* Set the background color on hover */
+    color: #ffffff;
+    /* Set
+   }
+
+
+
+   .pic:hover {
+     background-color: #045791; /* Set the background color on hover */
+    color: #ffffff; /* Set the text color on hover */
 }
-
-
 
 .pic:hover {
-  background-color: #045791; /* Set the background color on hover */
-  color: #ffffff; /* Set the text color on hover */
+    background-color: #045791; /* Set the background color on hover */
+    color: #ffffff; /* Set the text color on hover */
 }
-.pic:hover {
-  background-color: #045791; /* Set the background color on hover */
-  color: #ffffff; /* Set the text color on hover */
-}
+
 .doc:hover {
-  background-color: #890965; /* Set the background color on hover */
-  color: #ffffff; /* Set the text color on hover */
+    background-color: #890965; /* Set the background color on hover */
+    color: #ffffff; /* Set the text color on hover */
 }
+
 .vid:hover {
-  background-color: #08806a; /* Set the background color on hover */
-  color: #ffffff; /* Set the text color on hover */
+    background-color: #08806a; /* Set the background color on hover */
+    color: #ffffff; /* Set the text color on hover */
 }
+
 .aud:hover {
-  background-color: #3b0aa5; /* Set the background color on hover */
-  color: #ffffff; /* Set the text color on hover */
+    background-color: #3b0aa5; /* Set the background color on hover */
+    color: #ffffff; /* Set the text color on hover */
 }
+
 .filecategories-text-name {
-  font-size: 15px;
-  font-weight: bold;
-  color: #ffffff;
-  padding-top: 5px;
-  margin:0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 5px;
+    margin: 0;
 }
+
 .filecategories-text-number {
-  font-size: 13px;
-  font-weight: lighter;
-  color: #ffffff;
-  margin:0;
-  padding-top: 2px;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #ffffff;
+    margin: 0;
+    padding-top: 2px;
 }
 
 .filedivision {
-  color: #2a3471;
-  font-weight: bold;
-  padding: 10px;
-  padding-top: 20px;
+    color: #2a3471;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 20px;
 }
+
 .filesbutton {
-  padding: 10px;
-  margin: 5px;
-  font-size: 16px;
-  background-color: #ffffff;
-  color: #141d58;
-  width: 18%;
-  height: 100px;
-  border-radius: 10px;
-  border: none;
-  text-align: left;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #141d58;
+    width: 18%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
 }
+
 .filesbutton img {
-  width:20px;
-  height:20px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  padding:1px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 1px;
 }
+
 .filedivision-text-name {
-  font-size: 15px;
-  font-weight: bold;
-  color: #1d297c;
-  padding-top: 1px;
-  margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1d297c;
+    padding-top: 1px;
+    margin: 0;
 }
+
 .filedivision-text-number {
-  font-size: 13px;
-  font-weight: lighter;
-  color: #1d297c;
-  margin:0;
-  padding-top: 2px;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #1d297c;
+    margin: 0;
+    padding-top: 2px;
 }
+
 .filesbutton:hover {
-  background-color: #9995a1;
-  color: #141d58;
+    background-color: #9995a1;
+    color: #141d58;
 }
+
 .plusbutton {
-  background-color: #ffffff;
-  margin: 5px;
-  width: 18%;
-  height: 90px;
-  border-radius: 10px;
-  border: none;
+    background-color: #ffffff;
+    margin: 5px;
+    width: 18%;
+    height: 90px;
+    border-radius: 10px;
+    border: none;
 }
 
 .plusbutton img {
-  border-radius: 10px;
-  vertical-align: middle;
-  background-color: #ffffff;
-  width: 50px;
-  height: 50px;
-  border-radius: 49%;
-  border: none;
-  outline: none;
-  object-fit: cover;
+    border-radius: 10px;
+    vertical-align: middle;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 49%;
+    border: none;
+    outline: none;
+    object-fit: cover;
 }
+
 .recentfiles {
-  padding: 10px;
+    padding: 10px;
 }
+
 .recentflcapt {
-  font-weight: bold;
-  color: #141d58;
+    font-weight: bold;
+    color: #141d58;
 }
+
 .recentfiles button {
-  display: block; /* Make buttons block-level elements */
-  margin-bottom: 15px; /* Add vertical spacing between buttons */
+    display: block; /* Make buttons block-level elements */
+    margin-bottom: 15px; /* Add vertical spacing between buttons */
 }
 
 .longbutton {
-  background-color: #ffffff;
-  text-align: left;
-  padding-left: 20px;
-  font-size: 16px;
-  width: 100%;
-  height: 50px;
-  border: none;
-  border-radius: 10px;
+    background-color: #ffffff;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
 
 }
+
 /*
 .longbutton1 {
   width: 900px;
@@ -329,23 +355,25 @@
   justify-content:space-evenly;
 }*/
 .longbutton-elements {
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .longbutton-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  background-color: #0473c2;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #0473c2;
 }
+
 .longbutton-icon img {
-  padding: 5px;
-  width: 30px;
-  height: 30px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
 }
-/* .longbutton-share,
+
+.longbutton-share,
 .longbutton-options
 {
   width: 60px;
@@ -359,172 +387,176 @@
  {
   width: 25px;
   height: 25px;
-  padding: 5px,5px;
-} */
+  padding: 5px 5px;
+}
 
 .options img {
-  width: 25px;
-  height: 25px;
-  padding: 5px,5px;
+    width: 25px;
+    height: 25px;
+    padding: 5px 5px;
 }
 
-.longbutton-filename {
-  font-size: 15px;
-  font-weight: bold;
-  color: #1d297c;
-  cursor: pointer;
-}
-.longbutton-fileformat {
-  font-size: 15px;
-  font-weight: lighter;
-  color: #1d297c
-}
-.share-option-button-adjust {
-  padding-left: 50px;
-}
-.longbutton:hover {
-  background-color: #b8b8b8;
-  color: black;
-}
+/*.longbutton-filename {*/
+/*    font-size: 15px;*/
+/*    font-weight: bold;*/
+/*    color: #1d297c;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.longbutton-fileformat {*/
+/*    font-size: 15px;*/
+/*    font-weight: lighter;*/
+/*    color: #1d297c*/
+/*}*/
+
+/*.share-option-button-adjust {*/
+/*    padding-left: 50px;*/
+/*}*/
+
+/*.longbutton:hover {*/
+/*    background-color: #b8b8b8;*/
+/*    color: black;*/
+/*}*/
+
 .addfl {
-  padding-bottom: 10px;
-}
-.addfiles{
-  padding: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #e8eef3;
-  color: #1d297c;
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  border: none;
+    padding-bottom: 10px;
 }
 
-.addfiles img
-{
-  width: 30px;
-  height: 30px;
-  padding: 5px;
-  background-color: #e8eef3;
+.addfiles {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #e8eef3;
+    color: #1d297c;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
 }
+
+.addfiles img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #e8eef3;
+}
+
 .rectanglestorage {
-  width: 100%;
-  height: fit-content;
-  background-color: #e8eef3;
-  border-radius: 10px;
-  margin: 0px 0px 10px 0px;
+    width: 100%;
+    height: fit-content;
+    background-color: #e8eef3;
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
 }
+
 .stor {
-  font-weight: bold;
-  margin-left: 10px;
-  font-size: 10px;
-  padding: 0px;
-  color: #141d58;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 10px;
+    padding: 0px;
+    color: #141d58;
 }
+
 .stor-left {
-  font-weight: bold;
-  padding: 0px 10px 0px 0px;
-  font-size: 10px;
-  color: #2596a0;
+    font-weight: bold;
+    padding: 0px 10px 0px 0px;
+    font-size: 10px;
+    color: #2596a0;
 }
 
 .stor-flex-container {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .stor-flex-grow {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 
 /* storage meter */
 .storage-meter {
-  width: 200px; /* Set the width of the meter */
-  padding: 0px 5px 10px 5px;
+    width: 200px; /* Set the width of the meter */
+    padding: 0px 5px 10px 5px;
 }
 
 .storage-meter progress {
-  width: 100%;
-  height: 8px; /* Set the height of the meter */
-  appearance: none;
-  -webkit-appearance: none;
+    width: 100%;
+    height: 8px; /* Set the height of the meter */
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .storage-meter progress::-webkit-progress-bar {
-  background-color: #ffffff; /* Set the background color of the progress bar */
-  border-radius: 10px; /* Add rounded corners if desired */
+    background-color: #ffffff; /* Set the background color of the progress bar */
+    border-radius: 10px; /* Add rounded corners if desired */
 }
 
 .storage-meter progress::-webkit-progress-value {
-  background-color: #045791; /* Set the progress bar color */
-  border-radius: 10px; /* Add rounded corners if desired */
+    background-color: #045791; /* Set the progress bar color */
+    border-radius: 10px; /* Add rounded corners if desired */
 }
 
 
-
-.right-group
-{
-  padding:20px;
-  background-color: #ffffff;
-  border-radius: 10px;
+.right-group {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
 
 .sharedbutton {
-  background-color: #c6e3be;
-  padding: 0px 10px 0px 10px;
-  margin: 2px 0px 5px 5px;
-  font-size: 16px;
-  width: 95%;
-  height: 40px;
-  border: none;
-  border-radius: 10px;
+    background-color: #c6e3be;
+    padding: 0px 10px 0px 10px;
+    margin: 2px 0px 5px 5px;
+    font-size: 16px;
+    width: 95%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
 }
 
 .sharedbutton-elements {
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .sharedbutton-filename {
-  font-size: 10px;
-  font-weight: bold;
-  color: #1d297c;
+    font-size: 10px;
+    font-weight: bold;
+    color: #1d297c;
 }
 
 .sharedoptions img {
-  width: 15px;
-  height: 15px;
-  background-color: #ffffff;
-  border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
 }
 
-.addmore
-{
-  background-color: #ffffff;
-  padding: 0px 10px 0px 10px;
-  margin: 3px 0px 10px 5px;
-  font-size: 10px;
-  width: 95%;
-  height: 40px;
-  border: none;
-  color: #1d297c;
-  border-color: #1d297c;
-  border-radius: 10px;
-  border: 1px solid;
+.addmore {
+    background-color: #ffffff;
+    padding: 0px 10px 0px 10px;
+    margin: 3px 0px 10px 5px;
+    font-size: 10px;
+    width: 95%;
+    height: 40px;
+    border: none;
+    color: #1d297c;
+    border-color: #1d297c;
+    border-radius: 10px;
+    border: 1px solid;
 }
 
 .upload-progress-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
 }
 
 .image-container {
-  display: flex;
+    display: flex;
 
 }
