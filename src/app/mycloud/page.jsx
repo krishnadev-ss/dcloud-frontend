@@ -8,6 +8,13 @@ import {useRouter} from "next/navigation";
 import Modal from "@/components/Preview/preview";
 import Menu from "@/components/Menu/Menu";
 import Image from "next/image";
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import FileTable from "@/components/file-table/file-table";
 
 const HomePageLayout = () => {
 
@@ -90,44 +97,16 @@ const HomePageLayout = () => {
                     </div>
                     <div className={styles.recentfiles}>
                         <p className={styles.recentflcapt}>Recent files</p>
-                        {data?.files?.map((file, index) => (
-                            <div key={index} title={file.name}>
-                                <button className={styles.longbutton}>
-                                    <div className={styles['longbutton-elements']}>
-                                        <div className={styles['longbutton-icon']}>
-                                            {file.type === "image" &&
-                                                <Image width={50} height={50} src="/mycloud/camerawhite.png"
-                                                       alt="image"/>}
-                                            {file.type === "video" &&
-                                                <Image width={50} height={50} src="/mycloud/videowhite.png"
-                                                       alt="image"/>}
-                                            {file.type === "document" &&
-                                                <Image width={50} height={50} src="/mycloud/documentswhite.png"
-                                                       alt="image"/>}
-                                            {file.type === "audio" &&
-                                                <Image width={50} height={50} src="/mycloud/audiowhite.png"
-                                                       alt="image"/>}
-                                            {file.type === "other" &&
-                                                <Image width={50} height={50} src="/mycloud/others.png" alt="image"/>}
-                                        </div>
-                                        <div className={styles['longbutton-filename']}
-                                             onClick={() => handleFileClick(file)}>{file.name.slice(0, 20)}</div>
-                                        <div className={styles['longbutton-fileformat']}>{file.type}</div>
-                                        <div className={styles['longbutton-fileformat']}>{file.size.toFixed(3)}MB</div>
-                                        <div className={styles.options}>
-                                            <Menu cid={file.cid}
-                                                  id={file._id}
-                                                  isFavorite={file.isFavorite}
-                                                  downloadMenu={true}
-                                                  shareMenu={true}
-                                                  deleteMenu={true}
-                                                  favoriteMenu={true}
-                                            />
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                        ))}
+
+                        <FileTable
+                            data={data}
+                            downloadMenu
+                            shareMenu
+                            favoriteMenu
+                            deleteMenu
+                        />
+
+
                     </div>
                 </div>
 

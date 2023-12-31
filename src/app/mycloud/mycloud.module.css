@@ -396,18 +396,18 @@
     padding: 5px 5px;
 }
 
-/*.longbutton-filename {*/
-/*    font-size: 15px;*/
-/*    font-weight: bold;*/
-/*    color: #1d297c;*/
-/*    cursor: pointer;*/
-/*}*/
+.longbutton-filename {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1d297c;
+    cursor: pointer;
+}
 
-/*.longbutton-fileformat {*/
-/*    font-size: 15px;*/
-/*    font-weight: lighter;*/
-/*    color: #1d297c*/
-/*}*/
+.longbutton-fileformat {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #1d297c
+}
 
 /*.share-option-button-adjust {*/
 /*    padding-left: 50px;*/
